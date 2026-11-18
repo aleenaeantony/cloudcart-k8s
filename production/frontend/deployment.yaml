@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/frontend:bootstrap-e56fe8b-20261117091333
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/frontend:prod-a20e1d61-44347316081
           ports:
             - name: http
               containerPort: 8080
