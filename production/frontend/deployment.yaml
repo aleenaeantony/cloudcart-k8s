@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -24,7 +25,7 @@ spec:
           image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/frontend:bootstrap-e56fe8b-20261117091333
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8080
           resources:
             requests:
               cpu: 100m
