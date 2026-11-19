@@ -31,7 +31,7 @@ spec:
               app: payment-service
       containers:
         - name: payment-service
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/payment-service:bootstrap-e56fe8b-20261117091333
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/payment-service:prod-bb8715a7-44507986906
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
