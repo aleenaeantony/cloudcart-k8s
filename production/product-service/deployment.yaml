@@ -31,7 +31,7 @@ spec:
               app: product-service
       containers:
         - name: product-service
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/product-service:bootstrap-e56fe8b-20261117091333
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/product-service:prod-5ec6d1d4-44486036464
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
