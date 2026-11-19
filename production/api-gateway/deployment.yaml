@@ -31,7 +31,7 @@ spec:
               app: api-gateway
       containers:
         - name: api-gateway
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/api-gateway:prod-e41f9110-44476894934
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/api-gateway:prod-9fa2eeb8-44477579853
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
