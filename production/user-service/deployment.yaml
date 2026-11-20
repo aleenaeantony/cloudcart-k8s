@@ -31,7 +31,7 @@ spec:
               app: user-service
       containers:
         - name: user-service
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/user-service:prod-5ec6d1d4-44485631566
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/user-service:prod-e15bb5e7-44713974264
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
