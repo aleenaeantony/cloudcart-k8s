@@ -31,7 +31,7 @@ spec:
               app: order-service
       containers:
         - name: order-service
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/order-service:prod-bb8715a7-44506728682
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/order-service:prod-e15bb5e7-44717683910
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
