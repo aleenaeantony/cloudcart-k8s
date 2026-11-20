@@ -52,10 +52,7 @@ spec:
                   name: cloudcart-mysql-credentials
                   key: DB_PORT
             - name: MYSQL_DATABASE
-              valueFrom:
-                secretKeyRef:
-                  name: cloudcart-mysql-credentials
-                  key: DB_NAME
+              value: ecommerce_order
             - name: MYSQL_USERNAME
               valueFrom:
                 secretKeyRef:
