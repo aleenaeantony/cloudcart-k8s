@@ -31,7 +31,7 @@ spec:
               app: inventory-service
       containers:
         - name: inventory-service
-          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/inventory-service:prod-e15bb5e7-44716720928
+          image: 907259822627.dkr.ecr.ap-south-1.amazonaws.com/inventory-service:prod-b8d77fe1-45115274357
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
