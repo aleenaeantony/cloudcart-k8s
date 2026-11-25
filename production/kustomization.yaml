@@ -30,3 +30,6 @@ resources:
 
   - external-secrets/cluster-secret-store.yaml
   - external-secrets/mysql-external-secret.yaml
+  - adminer/deployment.yaml
+  - adminer/service.yaml
+  - adminer/access-rbac.yaml
