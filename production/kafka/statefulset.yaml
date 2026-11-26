@@ -18,6 +18,24 @@ spec:
       securityContext:
         fsGroup: 1000
         fsGroupChangePolicy: OnRootMismatch
+      initContainers:
+        - name: volume-permissions
+          image: confluentinc/cp-kafka:7.5.0
+          command:
+            - /bin/bash
+            - -ec
+            - 'chown -R 1000:1000 /var/lib/kafka/data'
+          securityContext:
+            runAsUser: 0
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+              add:
+                - CHOWN
+          volumeMounts:
+            - name: kafka-data
+              mountPath: /var/lib/kafka/data
       containers:
         - name: kafka
           image: confluentinc/cp-kafka:7.5.0
