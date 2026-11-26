@@ -15,6 +15,9 @@ spec:
         app: kafka
     spec:
       terminationGracePeriodSeconds: 60
+      securityContext:
+        fsGroup: 1000
+        fsGroupChangePolicy: OnRootMismatch
       containers:
         - name: kafka
           image: confluentinc/cp-kafka:7.5.0
