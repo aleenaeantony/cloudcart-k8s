@@ -24,7 +24,7 @@ spec:
           command:
             - /bin/bash
             - -ec
-            - 'chown -R 1000:1000 /var/lib/kafka/data'
+            - 'mkdir -p /var/lib/kafka/data/kafka-logs && chown -R 1000:1000 /var/lib/kafka/data/kafka-logs'
           securityContext:
             runAsUser: 0
             allowPrivilegeEscalation: false
