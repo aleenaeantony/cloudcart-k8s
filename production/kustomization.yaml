@@ -30,6 +30,8 @@ resources:
 
   - external-secrets/cluster-secret-store.yaml
   - external-secrets/mysql-external-secret.yaml
+  - tailscale/oauth-external-secret.yaml
+  - tailscale/namespace.yaml
   - adminer/deployment.yaml
   - adminer/service.yaml
   - adminer/access-rbac.yaml
