@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cloudcart-grafana
+  namespace: monitoring
+spec:
+  ingressClassName: tailscale
+  tls:
+    - hosts:
+        - cloudcart-grafana
+  rules:
+    - host: cloudcart-grafana
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: cloudcart-monitoring-grafana
+                port:
+                  number: 80

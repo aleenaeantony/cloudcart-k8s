@@ -35,3 +35,5 @@ resources:
   - adminer/deployment.yaml
   - adminer/service.yaml
   - adminer/access-rbac.yaml
+
+  - monitoring/grafana-ingress.yaml
